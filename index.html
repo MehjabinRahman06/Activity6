@@ -56,7 +56,9 @@ html_content = """
     {
 
         // Step 1 read csv file
-        d3.json("dicomData/"+fileNumber).then(data=>
+        //d3.json("dicomData/"+fileNumber)
+    d3.json("https://raw.githubusercontent.com/umassdgithub/DataViz-Fall2025/main/Week-12-Part-2%20MultiView%20Tooltip/Activity%206/dicomData/" + fileNumber)
+.then(data=>
 
         {
             d3.select("svg").selectAll("*").remove()
